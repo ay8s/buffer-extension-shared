@@ -10,12 +10,8 @@
             selector: '.buffer-td-button',
             data: function (elem) {
                 var tweet = $(elem).parents('.js-tweet');
-                
                 var user = $(tweet).find('.username').text();
                 var text = $(tweet).find('.tweet-text').text();
-                
-                var link = "";
-                
                 var tweetText = "RT " + user + " " + text;
                 
                 return {
