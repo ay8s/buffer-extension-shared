@@ -25,7 +25,7 @@
     var createButton = function (btnConfig) {
 
         var a = document.createElement('a');
-        a.setAttribute('class', btnConfig.className);
+        a.setAttribute('class', btnConfig.className + " txt-mute txt-small");
         a.setAttribute('href', '#');
         $(a).text(btnConfig.text);
 
