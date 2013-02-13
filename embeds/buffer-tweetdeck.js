@@ -75,7 +75,9 @@
     ;(function check() {
         // If hn is switched on, add the buttons
         if( xt.options && xt.options['buffer.op.hacker'] === 'hacker') {
-            insertButtons();
+            $(document).bind('DOMNodeInserted', function(event) {
+            	insertButtons();
+			});
         } else {
             setTimeout(check, 2000);
         }
